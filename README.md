@@ -59,7 +59,11 @@ docker container rm -f <container ids &lt //force remove option
  
  - continaer start command to start a continaer. Again it has option of "ai" which is attach interactive to get a shell
  
- - to attach shell to a running container, use the exec command to connect terminal with it
+ - to attach shell to a running container, use the exec command to connect terminal with it. exec use "it" option just like run
+ 
+ - when we exit the command run using exec, container is not stopped, as the exec was run in addition to root command and so there is a command running on contianer. but when using run, we are running only one command and so contaienr stops when this is exited.
+ 
+ 
 
   
 
