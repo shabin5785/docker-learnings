@@ -48,6 +48,8 @@ docker container rm -f <container ids &lt //force remove option
 
 - we dont need a ssh connection to a container to connect and interact with the container.docker can do it for us.
 
+- there is an "it" option, which is combinatin of interactive and tty terminal. This passed to docker while running a container gives us an interactive terminal to work with, connected to teh container.
+
 
   
 
