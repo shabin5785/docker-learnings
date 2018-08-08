@@ -64,6 +64,10 @@ docker container rm -f <container ids &lt //force remove option
  - when we exit the command run using exec, container is not stopped, as the exec was run in addition to root command and so there is a command running on contianer. but when using run, we are running only one command and so contaienr stops when this is exited.
  
  - and we can only run a command in a container only if that is installed in the continer. Like running bash, the container needs to have bash installed. 
+ 
+ - each contianer has a private network bridge which is "NAT" to the host ip
+ 
+ - all containers with a virtual network can talk to each other. Its best practice to keep logically separate containers in different virtual networks. 
 
   
 
