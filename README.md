@@ -57,7 +57,9 @@ docker container rm -f <container ids &lt //force remove option
  
  - some continaers like linux distros have bash or a terminal as defautl command to run. So if we just specify the it option, contianer will by default return an interactive terminal. But continaers like nginx, dont have default command as a termianl or bash, or givingn just it wiht no command override, will give a blank interactive terminal 
  
+ - continaer start command to start a continaer. Again it has option of "ai" which is attach interactive to get a shell
  
+ - to attach shell to a running container, use the exec command to connect terminal with it
 
   
 
