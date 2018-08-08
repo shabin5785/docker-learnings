@@ -53,7 +53,7 @@ docker container rm -f <container ids &lt //force remove option
 - docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]
  here after image we can pass commands that needs to be run in the continer. Like passing bash will run bash command within the container. 
  
- 
+ This command will override the default command that is run in the container. Now if we specify the command as bash, then later exit the bash, it means the bash is stopped container has no process to run and will stop.
 
   
 
