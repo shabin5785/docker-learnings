@@ -68,6 +68,14 @@ docker container rm -f <container ids &lt //force remove option
  - each contianer has a private network bridge which is "NAT" to the host ip
  
  - all containers with a virtual network can talk to each other. Its best practice to keep logically separate containers in different virtual networks. 
+ 
+ - if we chose not to use the default virtual network , we can create our own virtual networks. attach containers to that etc. We can link container to multiple virtual networks, or even connect container to host ip ( lost some container features)
+ 
+ - docker container port can list ports open within the container
+ 
+ - we can pass a "format " option with a formatting string to extract data from json output, like use it to extract data from inspect command
+ 
+ 
 
   
 
