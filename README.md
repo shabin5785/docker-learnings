@@ -42,5 +42,10 @@ docker container ls -a
 docker container stop < container ids>
 docker ps
 docker container rm -f <container ids &lt //force remove option
+
+
+- docker has commands that can help us show container meta data and performance like stats command or inspect command or top command
+
+-
   
 
