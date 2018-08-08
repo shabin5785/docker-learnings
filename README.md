@@ -31,10 +31,6 @@ publis A:B, where A is local port and B is container port
 
 -docker on starting a continaer, adds a layer on top of image, sets networking, gives it a virtual ip, opens the required ports and starts it.
 
-- the container runs as a process on the host machine, run as a different user. We can see the process in teh host machine process list. in that way its different from a virtual machine and an app that runs inside the virtual machine. 
+- the container runs as a process on the host machine, run as a different user. We can see the process in teh host machine process list. in that way its different from a virtual machine and an app that runs inside the virtual machine.
+- use env option while starting containers to pass environment variables to the containers. 
 
-
-
-
-  
-  
