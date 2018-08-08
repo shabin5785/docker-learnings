@@ -54,6 +54,10 @@ docker container rm -f <container ids &lt //force remove option
  here after image we can pass commands that needs to be run in the continer. Like passing bash will run bash command within the container. 
  
  This command will override the default command that is run in the container. Now if we specify the command as bash, then later exit the bash, it means the bash is stopped container has no process to run and will stop.
+ 
+ - some continaers like linux distros have bash or a terminal as defautl command to run. So if we just specify the it option, contianer will by default return an interactive terminal. But continaers like nginx, dont have default command as a termianl or bash, or givingn just it wiht no command override, will give a blank interactive terminal 
+ 
+ 
 
   
 
