@@ -46,6 +46,8 @@ docker container rm -f <container ids &lt //force remove option
 
 - docker has commands that can help us show container meta data and performance like stats command or inspect command or top command
 
--
+- we dont need a ssh connection to a container to connect and interact with the container.docker can do it for us.
+
+
   
 
