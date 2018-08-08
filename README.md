@@ -17,7 +17,7 @@
 - a docker image is the application that we run. Container is the instance of the image that we run.we can have many containers based on an image.
 
 - publish command will expose a local port and link it with the port of the container.
-publis A:B, where A is local port and B is container port
+publish A:B, where A is local port and B is container port
 
 - detach will run the docker command in background. this will return a unique container id
 
@@ -33,4 +33,14 @@ publis A:B, where A is local port and B is container port
 
 - the container runs as a process on the host machine, run as a different user. We can see the process in teh host machine process list. in that way its different from a virtual machine and an app that runs inside the virtual machine.
 - use env option while starting containers to pass environment variables to the containers. 
+
+- sample commands
+docker container run --publish 80:80 --detach --name mycontainer_nginx nginx
+docker container logs <container name&lt
+docker container ls
+docker container ls -a
+docker container stop < container ids>
+docker ps
+docker container rm -f <container ids &lt //force remove option
+  
 
