@@ -50,6 +50,10 @@ docker container rm -f <container ids &lt //force remove option
 
 - there is an "it" option, which is combinatin of interactive and tty terminal. This passed to docker while running a container gives us an interactive terminal to work with, connected to teh container.
 
+- docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]
+ here after image we can pass commands that needs to be run in the continer. Like passing bash will run bash command within the container. 
+ 
+ 
 
   
 
