@@ -76,7 +76,6 @@ docker container rm -f <container ids &lt //force remove option
  - we can pass a "format " option with a formatting string to extract data from json output, like use it to extract data from inspect command
  
  - Continaers are by default created in their virutal network. This network cannot access host machine network. We then create a tunnel or link by using "-p" which maps a port from host to a port in virtual network. Now traffic is routed from virtual network to host network via this ports. 
- Two ports in hostmachine cannot be used multiple times. 
-
-  
-
+ Two ports in hostmachine cannot be used multiple times.
+ 
+ - "bridge" is the name of the default network created by docker that is NAT'ed to host ip
