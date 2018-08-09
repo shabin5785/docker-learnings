@@ -87,3 +87,8 @@ docker container rm -f <container ids &lt //force remove option
  connect and disconnect are dynamic, no need to stop teh containers. 
  
  - each network created will have its own ip range. startign with 172.x.x.x, with increasign numbers
+ 
+ - docker supports dns and we should use it ahead of ip. Docker uses container name as dns names.( we can set alias if we wants to)
+ 
+ - default netowork "bridge" doesnt have dns resolution built into it. so on creating containers, we have to use "link" option to link containers and allow dns resolution. 
+ Its far easier to creaet a new network( which will have dns built into it). then we by default get dns resolution
