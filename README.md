@@ -83,4 +83,4 @@ docker container rm -f <container ids &lt //force remove option
  
  - network in docekr needs a driver to work. By deafult docker has a driver name "bridge". We can use other drivers as well.
  
- - we can create our network, configure it and attach continaers to it. We can choose network while creating continars as well.
+ - we can create our network, configure it and attach continaers to it. We can choose network while creating continars as well. We can also disconnect or connect a container to a network
