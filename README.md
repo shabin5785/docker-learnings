@@ -85,3 +85,5 @@ docker container rm -f <container ids &lt //force remove option
  
  - we can create our network, configure it and attach continaers to it. We can choose network while creating continars as well. We can also disconnect or connect a container to a network.
  connect and disconnect are dynamic, no need to stop teh containers. 
+ 
+ - each network created will have its own ip range. startign with 172.x.x.x, with increasign numbers
