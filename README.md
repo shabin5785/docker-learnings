@@ -80,3 +80,7 @@ docker container rm -f <container ids &lt //force remove option
  
  - "bridge" is the name of the default network created by docker that is NAT'ed to host ip
  "host" is the name of the host netwokr. We can attach contianers to this network but not recommended.  there is a . "none" network whihc is not attached to any network.
+ 
+ - network in docekr needs a driver to work. By deafult docker has a driver name "bridge". We can use other drivers as well.
+ 
+ 
