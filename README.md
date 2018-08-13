@@ -92,3 +92,5 @@ docker container rm -f <container ids &lt //force remove option
  
  - default netowork "bridge" doesnt have dns resolution built into it. so on creating containers, we have to use "link" option to link containers and allow dns resolution. 
  Its far easier to creaet a new network( which will have dns built into it). then we by default get dns resolution
+ 
+ - By default a container’s file system persists even after the container exits. This makes debugging a lot easier (since you can inspect the final state) and you retain all your data by default. But if you are running short-term foreground processes, these container file systems can really pile up. If instead you’d like Docker to automatically clean up the container and remove the file system when the container exits, you can add the --rm
