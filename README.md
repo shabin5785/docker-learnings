@@ -94,3 +94,7 @@ docker container rm -f <container ids &lt //force remove option
  Its far easier to creaet a new network( which will have dns built into it). then we by default get dns resolution
  
  - By default a container’s file system persists even after the container exits. This makes debugging a lot easier (since you can inspect the final state) and you retain all your data by default. But if you are running short-term foreground processes, these container file systems can really pile up. If instead you’d like Docker to automatically clean up the container and remove the file system when the container exits, you can add the --rm
+ 
+ - use --net-alias command to set a name container dns. we can have same name given to multiple contianers( which has different ips). So lookup of the dns will return all ips under it and we can use it as load balancer or fail safe design etc
+ 
+ 
