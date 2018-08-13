@@ -1,1 +1,1 @@
-- image has the application binaries and dependencies and the meta data about image and how to run them. No need for kernal, as the host kernal is reused by the containers
+- image has the application binaries and dependencies and the meta data about image and how to run them. No need for kernal or drivers, as the host kernal is reused by the containers hence light weight.
