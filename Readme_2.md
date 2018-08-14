@@ -6,5 +6,8 @@
 
 - Images are pulled in layers. So when we pull a image that uses the same layer as an existing image, docker uses the image layer from cache. ( provided it has same SHA as required). So now we have two images sharing same layer ( they will be readonly based on union file system concept)
 
-
 - so if we change the file in base layer, docker will copy that file to the top most container level. This is known as **copy of write** and while accessing the top most file is returned by docker. 
+
+- we can inspect an image and see the metadata, like exposed ports, the startup command and lot of these things.
+
+
