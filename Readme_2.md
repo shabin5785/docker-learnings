@@ -5,3 +5,5 @@
 - every image starts with a blank layer called "scratch". Images can have multiple layers. so layers are jsut metadata change, with no files uploaded. every layers has a unique SHA to identify it uniquely.
 
 - Images are pulled in layers. So when we pull a image that uses the same layer as an existing image, docker uses the image layer from cache. ( provided it has same SHA as required). So now we have two images sharing same layer ( they will be readonly based on union file system concept)
+
+- so if we change the file in base layer, docker will copy that file to the top most container level. This is known as copy of write and whiel accessing the top most file is returned. 
