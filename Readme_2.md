@@ -14,4 +14,6 @@
 
 - images dont have a name, they have an id, a tag, and a repo. Repo is usually the organization or the user name. a combination of repo and tag name is what we use to identify the images. 
 
+- an image can have many tags, and if we are to download them again, they can be served from cache,if we already have a image with that tag in system.
+
 
