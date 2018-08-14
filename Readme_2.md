@@ -12,4 +12,6 @@
 
 - so a container is just a single read/write image on top of an image. 
 
+- images dont have a name, they have an id, a tag, and a repo. Repo is usually the organization or the user name. a combination of repo and tag name is what we use to identify the images. 
+
 
