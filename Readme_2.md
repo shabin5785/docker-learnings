@@ -10,4 +10,6 @@
 
 - we can inspect an image and see the metadata, like exposed ports, the startup command and lot of these things.
 
+- so a container is just a single read/write image on top of an image. 
+
 
