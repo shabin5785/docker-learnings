@@ -18,7 +18,7 @@
 
 - we can retag existing docker images. use "docker image tag "for this
 
-- by deafult tag name is given is latest. But latest not always means latest. Its just a tag, even though orgs take care to maintain it liek that
+- by deafult tag name is given is latest. But latest not always means latest. Its just a tag, even though orgs take care to maintain it liek that. So when we omit tag during creation, docker tags it as "latest".
 
 - use "docker image push" to push images to repo. To push images. we need to login first. Push then takes the image and puts it under our registry in repo.
 
