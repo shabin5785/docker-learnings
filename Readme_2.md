@@ -43,9 +43,17 @@
 - use docker image command to build an image from docker file. 
 docker image build -t <name&gt .
 
--t is used to tag image wiht name. If pbulish to docker hub we need unique image names. Else for local we can use any name. Lsat is the directory to build from. ( the above command is current directory). 
+-t is used to tag image wiht name. If pbulish to docker hub we need unique image names. Else for local we can use any name. Lsat is the directory to build from. ( the above command is current directory). if our file is not named Dockerfile, need to use -f optin as well to specify the file name .
 
 - WHile building each layer is given an unique hash. SO next time we build it and line has not changed, then the cached one is used. 
+
+- once built images go to local dokcer image repo. image is not put in the local directory that we built from.
+
+- as image has layers and while building docker uses cached layers,we should use layers that change as last as possible. Docker needs to build all layers since the changed one. So its better to keep the layers that change as last as possible. Like copying code to run in a server, we should put the copy code as last. Else every time we change the code, the entire layers needs to be rebuilt. 
+
+
+
+
 
 
 
