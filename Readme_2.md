@@ -111,6 +111,8 @@ this is a named volume and will have a friendly name for us to identify.
  
  - If same file is in continaer and the mapped directory in host, host machine always wins. 
  
+ - use ${pwd} while using mounts to link current directory to container.
+ 
  - So diff between mount and volume is that, volume needs to be edited and managed in container. while mount can be done either way. Volume is an extension wihtin container while mount is linnking a host directory to the container.
  
 
