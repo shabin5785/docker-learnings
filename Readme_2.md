@@ -61,4 +61,6 @@ docker image build -t <name&gt .
 
 - docker image tag can be used to tag images with names and docker image push can be used to push images to central repo. remeber we need unique names. So use a namespace based naming pattern.
 
+- && in command line is a conditional . Second command is run only if first is successfull. a semi colon(;) also does almost same, but run second command irrespective of the status of first. 
+
 
