@@ -80,7 +80,12 @@ Bind mounts is to bind a local direclty to a continaer directory.
 Volumes need manual deletion. We cannot delete it by removing containers . 
 docker volume prune is used for this 
 
-So if we dont delete this volume and start any instance of conatiners, then all of them will by default use this volume for storage and hence get to see the data. 
+- In background, the volume is physically created in host machine with unique folder name and then mounted to the volume path for the container. 
+We can see the data in host machine.
+
+**- Docker for windows and mac runs a linux vm to run docker.**
+
+
 
 
 
