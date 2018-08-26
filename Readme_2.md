@@ -90,7 +90,7 @@ We can see the data in host machine.
 - we can have named volumes when creating containers to help with volumes. 
 the "-v" option is same as specifying the volume in docker file. 
 now "-v abcd:/var/lib/mysql", here abcd is the volume name and part after colon is volume
-this is a named volume 
+this is a named volume and will have a friendly name for us to identify. 
 
 
 
