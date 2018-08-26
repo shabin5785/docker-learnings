@@ -85,6 +85,13 @@ We can see the data in host machine.
 
 **- Docker for windows and mac runs a linux vm to run docker.**
 
+- each container will get its own volume and a unnique directry created in host machine . this is retained even after continer is removed. 
+
+- we can have named volumes when creating containers to help with volumes. 
+the "-v" option is same as specifying the volume in docker file. 
+now "-v abcd:/var/lib/mysql", here abcd is the volume name and part after colon is volume
+this is a named volume 
+
 
 
 
