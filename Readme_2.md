@@ -63,6 +63,6 @@ docker image build -t <name&gt .
 
 - && in command line is a conditional . Second command is run only if first is successfull. a semi colon(;) also does almost same, but run second command irrespective of the status of first. 
 
-= "COPY . ." copy all files from current directory to current working director in image
+- "COPY . ." copy all files from current directory to current working director in image
 
 
