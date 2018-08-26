@@ -73,8 +73,10 @@ docker image build -t <name&gt .
 But this data is lost when we recycle contianers, or new contianers started wont have this data. 
 
 - Dokcer has two solutions for persistant data, docker volumes and bind mounts. 
-volume creates a special volume outside containers to store unique data. this is preserved across container removals and allows us to attach it to what ever contianer that we want. Contianer see this as a local file path.
+volume creates a special volume outside container UFS file system, but within in the docker , and not in host machine to store unique data. this is preserved across container removals and allows us to attach it to what ever contianer that we want. Contianer see this as a local file path.
 Bind mounts is to bind a local direclty to a continaer directory. 
+
+- Volume is configured in docker file . It is a direcetory specified in docker file. So on container boot, this directiry is created and used for storage. This is persisted until we manually remove hte container. 
 
 
 
