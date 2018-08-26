@@ -34,6 +34,19 @@
 
 - Now runnign too many commands will build too many layers and hence hte size will increase. So we can link commands under one RUN command using the "&&" option so that they all become one command and builds just one layer.
 
-- docker handles all logging for us. we need to ensure to send our logs to stdout and stderr. Our own logging will lead to overhead and complexity. We can map the stdout and stderr to different files within container.
+- docker handles all logging for us. we need to ensure to send our logs to stdout and stderr. Our own logging will lead to overhead and complexity. We can map/link the stdout and stderr to different files within container.
+
+- "EXPOSE" command is user to expose ports out of container. By default no ports are opened in the container. But this expose does not expose ports in the host, for that we need the --publish option.
+
+- "CMD" command is hte last command and its required. This is hte command that is run every time we lauch our container or run it. A docker file needs only one CMD command. So if there are multiple the last one wins.
+
+- use docker image command to build an image from docker file. 
+docker image build -t <name&gt .
+
+-t is used to tag image wiht name. If pbulish to docker hub we need unique image names. Else for local we can use any name. Lsat is the directory to build from. ( the above command is current directory). 
+
+- WHile building each layer is given an unique hash. SO next time we build it and line has not changed, then the cached one is used. 
+
+
 
 
