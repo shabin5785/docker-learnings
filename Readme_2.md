@@ -55,7 +55,7 @@ docker image build -t <name&gt .
 
 - "WORKDIR" is the command used in Dockerfile to chagne the directory to work with inside image. Its same as using "RUN cd.. ", docker workdir is the best practice. 
 
-- "COPY" command is used to copy files from local directory to the WORKDIR in image.(or any directory that is currently being worked on in image)
+- "COPY" command is used to copy files from local directory to the WORKDIR in image.(or any directory that is currently being worked on in image). images may have a default directory set, so we might not need to change dir as well. BUt its safer to change and work as this avoids confusion.
 
 
 
