@@ -94,6 +94,10 @@ this is a named volume and will have a friendly name for us to identify.
 
 - now advantage of naming is that we can use the same nameed volume while creatng containers. Now all these containers will share the same volume and data.
 
+- there are few cases where we need to create volume before creating containers, like when we are using custom drivers. 
+
+
+
 
 
 
