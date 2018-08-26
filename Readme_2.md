@@ -57,6 +57,8 @@ docker image build -t <name&gt .
 
 - "COPY" command is used to copy files from local directory to the WORKDIR in image.(or any directory that is currently being worked on in image). images may have a default directory set, so we might not need to change dir as well. BUt its safer to change and work as this avoids confusion.
 
+- One important thing is that we dont inherit "ENV" values from base image. We need to specify them ourselves. 
+
 
 
 
