@@ -106,6 +106,8 @@ this is a named volume and will have a friendly name for us to identify.
  above one maps local dir to container one. We basically has two names pointing to same locatin. 
  We can edit files in host machine and see changes in container. 
  
+ second part of above command is usually the workdir.
+ 
  
 
 
