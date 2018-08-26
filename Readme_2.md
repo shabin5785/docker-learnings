@@ -65,4 +65,19 @@ docker image build -t <name&gt .
 
 - "COPY . ." copy all files from current directory to current working director in image
 
+**Persistent Data**
+
+- Containers are usually meant for immutable and ephemeral. So we just throw away containers and start a new one. But there are cases where we need to store data, like a database or key-value pairs. Standard containers are persistent in nature. Data is retained once we stop and start the container. 
+
+- Ideally container shouldnt contain unique data, this is known as separation of concern. If we have unique data then we need to ensure that other containers that we start also has that data. 
+But this data is lost when we recycle contianers, or new contianers started wont have this data. 
+
+- Dokcer has two solutions for persistant data, docker volumes and bind mounts. 
+volume creates a special volume outside containers to store unique data. this is preserved across container removals and allows us to attach it to what ever contianer that we want. Contianer see this as a local file path.
+Bind mounts is to bind a local direclty to a continaer directory. 
+
+
+
+
+
 
