@@ -104,11 +104,15 @@ this is a named volume and will have a friendly name for us to identify.
 - option for bind mount is same "-v" option but with a full path to host directory or file.
  "-v /home/shabin/server:/usr/share/nginx/html"
  above one maps local dir to container one. We basically has two names pointing to same locatin. 
+ So updating or deleting in either of them affects the other. 
  We can edit files in host machine and see changes in container. 
  
  second part of above command is usually the workdir.
  
  - If same file is in continaer and the mapped directory in host, host machine always wins. 
+ 
+ - So diff between mount and volume is that, volume needs to be edited and managed in container. while mount can be done either way. Volume is an extension wihtin container while mount is linnking a host directory to the container.
+ 
 
 
 
