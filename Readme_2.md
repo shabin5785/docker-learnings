@@ -51,7 +51,9 @@ docker image build -t <name&gt .
 
 - as image has layers and while building docker uses cached layers,we should use layers that change as last as possible. Docker needs to build all layers since the changed one. So its better to keep the layers that change as last as possible. Like copying code to run in a server, we should put the copy code as last. Else every time we change the code, the entire layers needs to be rebuilt. 
 
-- instead of building from scracth, like building a server by using ubuntu, then nginx and then our code, we can extend official images. We can start frmo nginix image and add code. In this way we can be better proctected and safer and easier. So we define the official image as base image, add commands to docker file to extend it, build it and get a custom image. 
+- instead of building from scracth, like building a server by using ubuntu, then nginx and then our code, we can extend official images. We can start frmo nginix image and add code. In this way we can be better proctected and safer and easier. So we define the official image as base image, add commands to docker file to extend it, build it and get a custom image. Now official images,like nginix will already have ports exposed. So if we dont want additioanl ports we dont need to expose it. Like that official images will already have default cmds to run,so we dont to need to specify them as well. 
+
+- "WORKDIR" is the command used in Dockerfile to chagne the directory to work with inside image. Its same as using "RUN cd.. ", docker workdir is the best practice. 
 
 
 
