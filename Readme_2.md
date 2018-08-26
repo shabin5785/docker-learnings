@@ -108,7 +108,7 @@ this is a named volume and will have a friendly name for us to identify.
  
  second part of above command is usually the workdir.
  
- 
+ - If same file is in continaer and the mapped directory in host, host machine always wins. 
 
 
 
