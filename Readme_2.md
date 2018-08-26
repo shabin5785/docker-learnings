@@ -22,4 +22,16 @@
 
 - use "docker image push" to push images to repo. To push images. we need to login first. Push then takes the image and puts it under our registry in repo.
 
+- all docker images are created using a docker file. default file name for building images is Dockerfile. but we can use -f flag to give our own file name
+
+- "FROM" command is required in all docker files.Its the base image to start.Useful to use as small as a base image as possible line alpine instead of ubuntu. but using a main repo like ubuntu will get all packages and security updates.
+
+- "ENV" command is then used to environment varialbles ( key-value pairs). One main reason is that they work the same everywhere
+
+- order of commands in dockerfile is the order of layers in images. So the order of commands is very important. Even the ENV command is a layer in image. Any command in docker file builds an iamge. 
+
+- "RUN" command is used to run shell scripts or any scripts inside the base image. 
+
+- Now runnign too many commands will build too many layers and hence hte size will increase. So we can link commands under one RUN command using the "&&" option so that they all become one command and builds just one layer.
+
 
