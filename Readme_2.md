@@ -92,6 +92,8 @@ the "-v" option is same as specifying the volume in docker file.
 now "-v abcd:/var/lib/mysql", here abcd is the volume name and part after colon is volume
 this is a named volume and will have a friendly name for us to identify. 
 
+- now advantage of naming is that we can use the same nameed volume while creatng containers. Now all these containers will share the same volume and data.
+
 
 
 
