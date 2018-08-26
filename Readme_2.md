@@ -34,4 +34,6 @@
 
 - Now runnign too many commands will build too many layers and hence hte size will increase. So we can link commands under one RUN command using the "&&" option so that they all become one command and builds just one layer.
 
+- docker handles all logging for us. we need to ensure to send our logs to stdout and stderr. Our own logging will lead to overhead and complexity. We can map the stdout and stderr to different files within container.
+
 
