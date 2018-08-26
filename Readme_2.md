@@ -96,6 +96,17 @@ this is a named volume and will have a friendly name for us to identify.
 
 - there are few cases where we need to create volume before creating containers, like when we are using custom drivers. 
 
+- volume skips the ufs file system, like bind mounts. 
+
+- bind mounts map a host file or directory to a container file or directory.
+- bind mounts are host specific so cannot be specified in docker file, but when during contianer run.
+
+- option for bind mount is same "-v" option but with a full path to host directory or file.
+ "-v /home/shabin/server:/usr/share/nginx/html"
+ above one maps local dir to container one. We basically has two names pointing to same locatin. 
+ We can edit files in host machine and see changes in container. 
+ 
+ 
 
 
 
