@@ -77,6 +77,12 @@ volume creates a special volume outside container UFS file system, but within in
 Bind mounts is to bind a local direclty to a continaer directory. 
 
 - Volume is configured in docker file . It is a direcetory specified in docker file. So on container boot, this directiry is created and used for storage. This is persisted until we manually remove hte container. 
+Volumes need manual deletion. We cannot delete it by removing containers . 
+docker volume prune is used for this 
+
+So if we dont delete this volume and start any instance of conatiners, then all of them will by default use this volume for storage and hence get to see the data. 
+
+
 
 
 
