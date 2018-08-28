@@ -6,4 +6,4 @@
 
 - yaml file can be used with docker compose to create local setup and from version 1.13 can be used in prod with docker swarm
 
-
+- docker-compose.yml is default name, use -f option for other files.
