@@ -9,3 +9,5 @@
 - docker-compose.yml is default name, use -f option for other files.
 
 - atleast version 2 for docker compose file is recommended. 
+
+- docker compose file has services section for continaers ( including run, volume,image, commands, env etc), volume section and network section.
