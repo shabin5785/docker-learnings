@@ -11,3 +11,5 @@
 - atleast version 2 for docker compose file is recommended. 
 
 - docker compose file has services section for continaers ( including run, volume,image, commands, env, ports etc), volume section and network section.
+
+- compose has a depends on section that can be used to build hierarchy and relationships
