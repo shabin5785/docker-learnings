@@ -15,3 +15,5 @@
 - compose has a depends on section that can be used to build hierarchy and relationships
 
 - compose is not prod ready and should be used for local development and testing.
+
+- we can build a custom image inside comopse as well. Compose will look for image in cahce, if not found build it using our commands. next time the same file is composed, image is taken from cache.
