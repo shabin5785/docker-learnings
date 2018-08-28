@@ -13,3 +13,5 @@
 - docker compose file has services section for continaers ( including run, volume,image, commands, env, ports etc), volume section and network section.
 
 - compose has a depends on section that can be used to build hierarchy and relationships
+
+- compose is not prod ready and should be used for local development and testing.
