@@ -29,7 +29,7 @@ for this we use build command within compose and refer it to a docker file.
 
 - Swarm is not enabled by default. It has to be manually enabled to work with. it gives new commands like docker swarm, docker node, docker service, docker secret, docker stack
 
-- Swarm has a bunch of manager nodes and worker nodes, Managers keep a copy of swarm config in a db (raft db? ) . Also it encrypts the communication between slaves. There can be multiple manager nodes and many many slave nodes. 
+- Swarm has a bunch of manager nodes and worker nodes, Managers keep a copy of swarm config in a db (raft db? ) . Also it encrypts the communication between slaves. There can be multiple manager nodes and many many slave nodes. Each of the manager and workers can be a virutal machien or nodes
 
 
 
