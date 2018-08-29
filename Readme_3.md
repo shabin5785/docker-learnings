@@ -27,7 +27,7 @@ for this we use build command within compose and refer it to a docker file.
 
 - Swarm is different from swarm classic. 
 
-- Swarm is not enabled by default. It has to be manually enabled to work with.
+- Swarm is not enabled by default. It has to be manually enabled to work with. it gives new commands like docker swarm, docker node, docker service, docker secret, docker stack
 
 
 
