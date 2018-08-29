@@ -20,3 +20,15 @@
 for this we use build command within compose and refer it to a docker file.
 
 **Container automation- recylce/restart/replace/reboot**
+
+- how do we ensure containers run in trusted server?how to store secrets, configs etc
+
+- Swarm mode is a clustering solution built in docker. at its code swarm is a server-client arch whichh we can orchestrate and manage it.
+
+- Swarm is different from swarm classic. 
+
+
+
+
+
+
