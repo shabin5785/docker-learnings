@@ -35,6 +35,8 @@ for this we use build command within compose and refer it to a docker file.
 
 - mangers can be workers. and we can demote or promote nodes as managers or workers. A manager is a worker node with permission to control the swarm .
 
+-with docker container we can start one container at a time. Swarm has service command using which we can design tasks, and declare teh number of containers and replicas that we need of them (like 3 nginx nodes). The manager nodes then decide where to run the tasks and create the worker nodes.
+
 
 
 
