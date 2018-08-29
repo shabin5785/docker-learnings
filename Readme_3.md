@@ -42,6 +42,10 @@ Worker will connect to dispatcher and ask for tasks, once it gets a task it will
 
 - docker swarm init to enable swarm ( will create a single node swarm). This will init the swarm, create certificates etc .In short set up a swarm. the single node is a manager node. It also creates the raft database and stores config ( raft is a protocol that ensure consistency across multiple nodes especially in cloud env)
 
+- raft can be used to store config and secrets, no need for a separate db to store these values. 
+
+
+
 
 
 
