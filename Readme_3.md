@@ -49,6 +49,11 @@ Worker will connect to dispatcher and ask for tasks, once it gets a task it will
 - docker service command replaces run command in swarm. ( may be done to not break run command)
 
 - "docker service create" to create a new service based on an image. 
+docker service create alpine ( create a service based on alpine linux)
+as we have only one node as of now the above one creates a service wiht one replica
+service command will create the container and name it based on service name and take care of configuring it.
+
+
 
 
 
