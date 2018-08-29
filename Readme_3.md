@@ -40,7 +40,7 @@ for this we use build command within compose and refer it to a docker file.
 - swarm will accept commands to create a service. It will then orchestrate it and create tasks, then assign ip to the tasks , then assign nodes to the taks and then publishes to dispatcher.
 Worker will connect to dispatcher and ask for tasks, once it gets a task it will execute it brinign the node up to life 
 
-- docker swarm init to enable swarm ( will create a single node swarm)
+- docker swarm init to enable swarm ( will create a single node swarm). This will init the swarm, create certificates etc .In short set up a swarm. the single node is a manager node. It also creates the raft database and stores config ( raft is a protocol that ensure consistency across multiple nodes especially in cloud env)
 
 
 
