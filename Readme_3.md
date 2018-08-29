@@ -55,9 +55,7 @@ service command will create the container and name it based on service name and 
 
 "docker service upate <service id> -replica 3" will update the above service (based on id) to have 3 replicas. 
   
-- similar to this docker update can be used to modify the details or config of a running container. but difference between swarm update to container update is that we can do swarm update without brining the cluster down. So we can do a lot more update operations compared to a plain container.
-
-
+- similar to this docker update can be used to modify the details or config of a running container. but difference between swarm update to container update is that we can do swarm update without brining the cluster down. So we can do a lot more update operations compared to a plain container. swarm will make sure that updates happens in a way that doestn bring down the cluster.
 
 
 
