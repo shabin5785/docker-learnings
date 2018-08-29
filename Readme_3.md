@@ -54,6 +54,8 @@ as we have only one node as of now the above one creates a service wiht one repl
 service command will create the container and name it based on service name and take care of configuring it.
 
 "docker service upate <service id> -replica 3" will update the above service (based on id) to have 3 replicas. 
+  
+- similar to this docker update can be used to modify the details or config of a running container.
 
 
 
