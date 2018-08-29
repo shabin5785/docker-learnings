@@ -31,6 +31,12 @@ for this we use build command within compose and refer it to a docker file.
 
 - Swarm has a bunch of manager nodes and worker nodes, Managers keep a copy of swarm config in a db (raft db? ) . Also it encrypts the communication between slaves. There can be multiple manager nodes and many many slave nodes. Each of the manager and workers can be a virutal machien or nodes
 
+- There is a single raft db for all manager nodes ( raft consensus group)
+
+- mangers can be workers. and we can demote or promote nodes as managers or workers. A manager is a worker node with permission to control the swarm .
+
+
+
 
 
 
