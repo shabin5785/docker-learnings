@@ -53,7 +53,7 @@ docker service create alpine ( create a service based on alpine linux)
 as we have only one node as of now the above one creates a service wiht one replica
 service command will create the container and name it based on service name and take care of configuring it.
 
-
+"docker service upate <service id> -replica 3" will update the above service (based on id) to have 3 replicas. 
 
 
 
