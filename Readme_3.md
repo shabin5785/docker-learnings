@@ -27,6 +27,8 @@ for this we use build command within compose and refer it to a docker file.
 
 - Swarm is different from swarm classic. 
 
+- Swarm is not enabled by default. It has to be manually enabled to work with.
+
 
 
 
