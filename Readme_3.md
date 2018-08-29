@@ -48,6 +48,8 @@ Worker will connect to dispatcher and ask for tasks, once it gets a task it will
 
 - docker service command replaces run command in swarm. ( may be done to not break run command)
 
+- "docker service create" to create a new service based on an image. 
+
 
 
 
