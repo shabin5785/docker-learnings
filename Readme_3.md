@@ -44,7 +44,7 @@ Worker will connect to dispatcher and ask for tasks, once it gets a task it will
 
 - raft can be used to store config and secrets, no need for a separate db to store these values. 
 
-- "docker node ls" will list nodes in swarm.
+- "docker node ls" will list nodes in swarm and manage nods within swarm.
 
 
 
