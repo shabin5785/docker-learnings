@@ -46,6 +46,8 @@ Worker will connect to dispatcher and ask for tasks, once it gets a task it will
 
 - "docker node ls" will list nodes in swarm and manage nods within swarm.
 
+- docker service command replaces run command in swarm. ( may be done to not break run command)
+
 
 
 
