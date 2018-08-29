@@ -19,4 +19,4 @@
 - we can build a custom image inside comopse as well. Compose will look for image in cahce, if not found build it using our commands. next time the same file is composed, image is taken from cache.
 for this we use build command within compose and refer it to a docker file.
 
-**Container automation- recylce/restart**
+**Container automation- recylce/restart/replace/reboot**
