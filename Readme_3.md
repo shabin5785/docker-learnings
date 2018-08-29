@@ -37,7 +37,8 @@ for this we use build command within compose and refer it to a docker file.
 
 -with docker container we can start one container at a time. Swarm has service command using which we can design tasks, and declare teh number of containers and replicas that we need of them (like 3 nginx nodes). The manager nodes then decide where to run the tasks and create the worker nodes.
 
-
+- swarm will accept commands to create a service. It will then orchestrate it and create tasks, then assign ip to the tasks , then assign nodes to the taks and then publishes to dispatcher.
+Worker will connect to dispatcher and ask for tasks, once it gets a task it will execute it brinign the node up to life 
 
 
 
