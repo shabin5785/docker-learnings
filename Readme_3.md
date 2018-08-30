@@ -70,6 +70,8 @@ it also . load balances the network load of tasks.
 
 - currenty the load balancer is a stateless loadbalancer
 
+- stacks are an abstraction over services. Stacks accept compose files for services, networks and volumes.
+
 
 
 
