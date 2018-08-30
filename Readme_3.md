@@ -63,6 +63,8 @@ service command will create the container and name it based on service name and 
 
 each node in swarm can be connected to one or more overlay networks. Like db in one network, server in another one or two etc
 
+- how overlay works is by using a routing mesh. this works within the swarm and routes the packets arriving to the service to the correct task.
+
 
 
 
