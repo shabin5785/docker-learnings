@@ -64,6 +64,11 @@ service command will create the container and name it based on service name and 
 each node in swarm can be connected to one or more overlay networks. Like db in one network, server in another one or two etc
 
 - how overlay works is by using a routing mesh. this works within the swarm and routes the packets arriving to the service to the correct task. its a feature of linux kernal with a fancy name.
+it also . load balances the network load of tasks.
+
+- so if we have two nodes for a backend service, docker puts a VIP(virtual IP) in frnt of them and hanldes the load to the two nodes. We dont have to put a load balancer for this. Similar for extrnal traffic to the swarm.
+
+- currenty the load balancer is a stateless loadbalancer
 
 
 
