@@ -59,7 +59,7 @@ service command will create the container and name it based on service name and 
 
 - service will take care of recovey and automation of conainter life cycles. so to remove all containers in a service, we have to remove the service. else if we remove a container service wil bring it back up
 
-- inside swarm use the network with driver "overlay". this is for container traffic within the swarm . this comes out as a single vpn for all nodes in the swarm
+- inside swarm use the network with driver "overlay". this is for container traffic within the swarm . this comes out as a single vpn for all nodes in the swarm. So all nodes in swarm in different networks can talk to each other over the overlay network. 
 
 each node in swarm can be connected to one or more overlay networks. Like db in one network, server in another one or two etc
 
