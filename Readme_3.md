@@ -73,7 +73,7 @@ it also . load balances the network load of tasks.
 - stacks are an abstraction over services. Stacks accept compose files for services, networks and volumes and secrets.
 stack will create all of the defined items, we can use exisitng items like networks usign external command in stack file. 
 
-- stack cannot build images ( partly we shoudlnt be doing builds in prod)
+- stack cannot build images ( partly we shoudlnt be doing builds in prod). Similary compose ignores deploy. 
 
 
 
