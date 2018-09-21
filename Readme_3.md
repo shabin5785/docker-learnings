@@ -90,3 +90,4 @@ We have store secrets inside this. Only containers within the swarm can see and 
 
 - we cannot do update and remove ports. we can only update with add and remove ports option
 
+- we can also do healthchecks for containers. 
