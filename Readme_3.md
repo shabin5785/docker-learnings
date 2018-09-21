@@ -85,3 +85,5 @@ We have store secrets inside this. Only containers within the swarm can see and 
 
 
 -Docker override yaml file can be used to change docker file values. Dokcer will automatically read the file and apply the values. 
+
+- docker service update command can be used to update a running contianer. it can be used to change container settings and bring it up again.
