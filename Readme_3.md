@@ -80,4 +80,8 @@ stack will create all of the defined items, we can use exisitng items like netwo
 - Docker swarm raftdb as of 1.13 is encrypted disk by default. it is stored only in master node. 
 We have store secrets inside this. Only containers within the swarm can see and retrieve it. They are not stored in disk, though it appears like that, but its actually in-memory. 
 
-- after creating secret, we can map the secret files ( in-memory) while creating service and then assign values in secrets to the service. 
+- after creating secret, we can map the secret files ( in-memory) while creating service and then assign values in secrets to the service.
+
+
+
+-Docker override yaml file can be used to change docker file values. Dokcer will automatically read the file and apply the values. 
